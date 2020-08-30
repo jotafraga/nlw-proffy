@@ -46,7 +46,7 @@ const TeacherItem: React.FunctionComponent<TeacherItemProps> = ({ teacher }) => 
 
                 <a
                     onClick={createNewConnection}
-                    target="_blank"
+                    rel="noopener"
                     href={`https://wa.me/${teacher.whatsapp}?text=
                         ${encodeURIComponent("Olá " + teacher.name + "! Gostaria de saber se tem disponibilidade...")}`}>
                             
